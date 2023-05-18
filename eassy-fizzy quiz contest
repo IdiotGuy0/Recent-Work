@@ -1,0 +1,99 @@
+import time
+
+#start
+
+print('Hello Challenger...!')
+time.sleep(2)
+print('')
+print('^^* Welcome to online quiz contest *^^')
+time.sleep(3)
+print('')
+
+#user input
+
+print("Let's first fill up registration form..")
+print('')
+n=input('Enter your name: ')
+a=int(input('Enter your age: '))
+q=input('Enter your qualification: ')
+p=input('Enter contact details(mail/phone no): ')
+time.sleep(3)
+
+#start or quite
+print('')
+play=input('Are you ready to fire up? ')
+if play.lower()!='yes':
+    quit()
+else:
+    print('')
+    print("okk..! Let's fire up")
+    time.sleep(2)
+    print('')
+    print('Here is your balls')
+
+print('')
+#quiz game
+time.sleep(2)
+score=0
+
+ques=input('Where is the HQ of World Bank : ')
+if ques.lower()=='washington dc':
+    print('')
+    print('Nice..! first ball 2 runs')
+    score+=2
+else:
+    print('')
+    print('Man..clean bowled..!')
+
+print('')
+ques=input('What is GST stands for: ')
+if ques.lower()=='goods and services tax':
+    print('')
+    print('Wow..! second ball 2 runs')
+    score+=2
+else:
+    print('')
+    print('oh..lbw..!')
+    
+print('')
+ques=input('Neutron was disovered by : ')
+if ques.lower()=='james chadwick':
+    print('')
+    print('Amazing..! third ball 2 runs alsoo ')
+    score+=2
+else:
+    print('')
+    print('Run.. run..run out..!')
+
+print('')
+ques=input('Recently who is becomes first Indian the global ambassador of Gucci: ')
+if ques.lower()=='alia bhatt':
+    print('')
+    print('Outstanding..! another 2 runs')
+    score+=2
+else:
+    print('')
+    print("Oww...! it's caught..!")
+
+print('')
+ques=input("Who is known as father of nuclear reactor: ")
+if ques.lower()=='enrico fermi ':
+    print('')
+    print('Nailed it..! last 2 runs')
+    score+=2
+else:
+    print('')
+    print('Hit wicket..! hat-trick')
+
+#display score
+print('')
+time.sleep(4)
+print('analyzing.....!') 
+time.sleep(6)
+print('')
+print("total run",str(score),'and total pecentage',str((score/10)*100))
+print('')
+time.sleep(3)
+print('Thank you..!!')
+
+    
